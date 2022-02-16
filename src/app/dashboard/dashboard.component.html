@@ -1,0 +1,13 @@
+<h2>Top Heroes</h2>
+<app-hero-search></app-hero-search>
+
+<div class="heroes-menu" *ngFor="let hero of heroes">
+
+  <a routerLink="/detail/{{hero.id}}">
+    <img src="{{ hero.thumbnail.path }}.{{ hero.thumbnail.extension }}" alt="" style="height: 100px" >
+  </a>
+
+  <p>{{hero.name}}</p>
+</div>
+
+
